@@ -46,6 +46,7 @@
                                                             <connections>
                                                                 <action selector="onBtnPressed:" destination="zOL-f1-IkY" eventType="touchUpInside" id="oE3-4U-1XN"/>
                                                                 <action selector="onTouchDown:" destination="zOL-f1-IkY" eventType="touchDown" id="Veo-45-bv3"/>
+                                                                <action selector="onTounchCancel:" destination="zOL-f1-IkY" eventType="touchCancel" id="WSk-6W-6X2"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

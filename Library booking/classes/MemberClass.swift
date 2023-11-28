@@ -11,4 +11,5 @@ class MemberClass {
     var id : Int = 0
     var name : String = ""
     var phoneNo : String = ""
+    var date : Date = Date()
 }

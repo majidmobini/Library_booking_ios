@@ -9,11 +9,12 @@ import Foundation
 
 class RentClass {
     var id : Int = -1
-    var book : BookClass
+    var book : BookClass 
     var member : MemberClass
     var rentDate : Date = Date()
     var returnDate : Date = Date()
     var isReturned : Bool = false
+
     
     init(book : BookClass , member : MemberClass)
     {

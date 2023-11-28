@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainScreenBtnsCellDelegate : AnyObject  {
-    func btnPressed(btn : UIButton , id : Int)
+    func btnPressed(btn : UIButton )
 }
 
 class MainScreenBtnsCell: UITableViewCell {
@@ -25,6 +25,9 @@ class MainScreenBtnsCell: UITableViewCell {
         //Initialization code
     }
 
+    @IBAction func onTounchCancel(_ sender: Any) {
+        btn.backgroundColor = UIColor.init(named: "ButtonBackgroung")
+    }
     @IBAction func onTouchDown(_ sender: Any) {
         btn.backgroundColor = UIColor(named: "PrimaryDark")
     }
@@ -32,7 +35,7 @@ class MainScreenBtnsCell: UITableViewCell {
         btn.backgroundColor = UIColor.init(named: "ButtonBackgroung")
         if let delegate = delegate
         {
-            delegate.btnPressed(btn: sender, id: btn.tag)
+            delegate.btnPressed(btn: sender)
         }
     }
    

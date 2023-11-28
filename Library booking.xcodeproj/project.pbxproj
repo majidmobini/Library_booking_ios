@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79AA48C0920FA04240A579F7 /* Pods_Library_booking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77059D5F9EB3AA796A9D83E /* Pods_Library_booking.framework */; };
+		7AC8B9955A61B2F43BD10232 /* Pods_Library_booking_Library_bookingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CD94E207BDED159556C74C /* Pods_Library_booking_Library_bookingUITests.framework */; };
+		BF27C1172B1591D9005B7ACB /* AddBookDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */; };
+		BF27C1182B1591D9005B7ACB /* AddBookDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */; };
 		BF5852D42B1413C0008DF60A /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5852D32B1413C0008DF60A /* DbHelper.swift */; };
 		BFEDB0C72B12C489007BC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB0C62B12C489007BC44D /* AppDelegate.swift */; };
 		BFEDB0C92B12C489007BC44D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB0C82B12C489007BC44D /* SceneDelegate.swift */; };
@@ -25,6 +29,7 @@
 		BFEDB1082B12E2B7007BC44D /* MemberClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB1072B12E2B7007BC44D /* MemberClass.swift */; };
 		BFEDB10A2B12E308007BC44D /* RentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB1092B12E308007BC44D /* RentClass.swift */; };
 		BFEDB10D2B12E55C007BC44D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB10C2B12E55C007BC44D /* Constants.swift */; };
+		E1905B1954A17868815916CD /* Pods_Library_bookingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3691C99B477B872343F0E492 /* Pods_Library_bookingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EA2AF0A18740406D1814B8A /* Pods-Library booking-Library bookingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library booking-Library bookingUITests.release.xcconfig"; path = "Target Support Files/Pods-Library booking-Library bookingUITests/Pods-Library booking-Library bookingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3691C99B477B872343F0E492 /* Pods_Library_bookingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Library_bookingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		587D8FC3BCEDDDD9DD81924B /* Pods-Library booking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library booking.debug.xcconfig"; path = "Target Support Files/Pods-Library booking/Pods-Library booking.debug.xcconfig"; sourceTree = "<group>"; };
+		633C853C8EDBD166C6870A60 /* Pods-Library booking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library booking.release.xcconfig"; path = "Target Support Files/Pods-Library booking/Pods-Library booking.release.xcconfig"; sourceTree = "<group>"; };
+		75CD94E207BDED159556C74C /* Pods_Library_booking_Library_bookingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Library_booking_Library_bookingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89588A5F40A95BCAF8BF0A13 /* Pods-Library booking-Library bookingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library booking-Library bookingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Library booking-Library bookingUITests/Pods-Library booking-Library bookingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDBD63ED7ACB3EA620E5D99 /* Pods-Library bookingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library bookingTests.release.xcconfig"; path = "Target Support Files/Pods-Library bookingTests/Pods-Library bookingTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookDialog.swift; sourceTree = "<group>"; };
+		BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBookDialog.xib; sourceTree = "<group>"; };
 		BF5852D32B1413C0008DF60A /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
 		BFEDB0C32B12C489007BC44D /* Library booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDB0C62B12C489007BC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +81,8 @@
 		BFEDB1072B12E2B7007BC44D /* MemberClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberClass.swift; sourceTree = "<group>"; };
 		BFEDB1092B12E308007BC44D /* RentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentClass.swift; sourceTree = "<group>"; };
 		BFEDB10C2B12E55C007BC44D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C77059D5F9EB3AA796A9D83E /* Pods_Library_booking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Library_booking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FDAA8C4E873BCD4D6D82F4 /* Pods-Library bookingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library bookingTests.debug.xcconfig"; path = "Target Support Files/Pods-Library bookingTests/Pods-Library bookingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AA48C0920FA04240A579F7 /* Pods_Library_booking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1905B1954A17868815916CD /* Pods_Library_bookingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +106,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC8B9955A61B2F43BD10232 /* Pods_Library_booking_Library_bookingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF27C1142B159178005B7ACB /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */,
+				BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
 		BFEDB0BA2B12C489007BC44D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +129,8 @@
 				BFEDB0DC2B12C48B007BC44D /* Library bookingTests */,
 				BFEDB0E62B12C48B007BC44D /* Library bookingUITests */,
 				BFEDB0C42B12C489007BC44D /* Products */,
+				FF21ECC85DCD1CCD4A11C52D /* Pods */,
+				F1C65E0C834ABE88AB1C61AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +147,7 @@
 		BFEDB0C52B12C489007BC44D /* Library booking */ = {
 			isa = PBXGroup;
 			children = (
+				BF27C1142B159178005B7ACB /* Dialogs */,
 				BFEDB10B2B12E548007BC44D /* Variables */,
 				BFEDB1042B12E05F007BC44D /* classes */,
 				BFEDB0FD2B12D405007BC44D /* Helpers */,
@@ -186,6 +217,30 @@
 			path = Variables;
 			sourceTree = "<group>";
 		};
+		F1C65E0C834ABE88AB1C61AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77059D5F9EB3AA796A9D83E /* Pods_Library_booking.framework */,
+				75CD94E207BDED159556C74C /* Pods_Library_booking_Library_bookingUITests.framework */,
+				3691C99B477B872343F0E492 /* Pods_Library_bookingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF21ECC85DCD1CCD4A11C52D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				587D8FC3BCEDDDD9DD81924B /* Pods-Library booking.debug.xcconfig */,
+				633C853C8EDBD166C6870A60 /* Pods-Library booking.release.xcconfig */,
+				89588A5F40A95BCAF8BF0A13 /* Pods-Library booking-Library bookingUITests.debug.xcconfig */,
+				2EA2AF0A18740406D1814B8A /* Pods-Library booking-Library bookingUITests.release.xcconfig */,
+				E5FDAA8C4E873BCD4D6D82F4 /* Pods-Library bookingTests.debug.xcconfig */,
+				9BDBD63ED7ACB3EA620E5D99 /* Pods-Library bookingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEDB0ED2B12C48B007BC44D /* Build configuration list for PBXNativeTarget "Library booking" */;
 			buildPhases = (
+				31AD80147A4F9407A97714E9 /* [CP] Check Pods Manifest.lock */,
 				BFEDB0BF2B12C489007BC44D /* Sources */,
 				BFEDB0C02B12C489007BC44D /* Frameworks */,
 				BFEDB0C12B12C489007BC44D /* Resources */,
+				7FD9879B41FE3D7ECBD881A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEDB0F02B12C48B007BC44D /* Build configuration list for PBXNativeTarget "Library bookingTests" */;
 			buildPhases = (
+				9C8674C9667099CA5D13794C /* [CP] Check Pods Manifest.lock */,
 				BFEDB0D52B12C48B007BC44D /* Sources */,
 				BFEDB0D62B12C48B007BC44D /* Frameworks */,
 				BFEDB0D72B12C48B007BC44D /* Resources */,
@@ -228,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEDB0F32B12C48B007BC44D /* Build configuration list for PBXNativeTarget "Library bookingUITests" */;
 			buildPhases = (
+				081A5B462F9DB3122DDCD21A /* [CP] Check Pods Manifest.lock */,
 				BFEDB0DF2B12C48B007BC44D /* Sources */,
 				BFEDB0E02B12C48B007BC44D /* Frameworks */,
 				BFEDB0E12B12C48B007BC44D /* Resources */,
+				BE23CA2B1DDEA4F3BEC3B052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF27C1182B1591D9005B7ACB /* AddBookDialog.xib in Resources */,
 				BFEDB0D32B12C48B007BC44D /* LaunchScreen.storyboard in Resources */,
 				BFEDB0D02B12C48B007BC44D /* Assets.xcassets in Resources */,
 				BFEDB0CE2B12C489007BC44D /* Main.storyboard in Resources */,
@@ -313,6 +374,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		081A5B462F9DB3122DDCD21A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Library booking-Library bookingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31AD80147A4F9407A97714E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Library booking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD9879B41FE3D7ECBD881A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Library booking/Pods-Library booking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Library booking/Pods-Library booking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Library booking/Pods-Library booking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8674C9667099CA5D13794C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Library bookingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE23CA2B1DDEA4F3BEC3B052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Library booking-Library bookingUITests/Pods-Library booking-Library bookingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Library booking-Library bookingUITests/Pods-Library booking-Library bookingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Library booking-Library bookingUITests/Pods-Library booking-Library bookingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFEDB0BF2B12C489007BC44D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -320,6 +484,7 @@
 			files = (
 				BFEDB0CB2B12C489007BC44D /* MainViewController.swift in Sources */,
 				BFEDB1062B12E099007BC44D /* BookClass.swift in Sources */,
+				BF27C1172B1591D9005B7ACB /* AddBookDialog.swift in Sources */,
 				BFEDB1082B12E2B7007BC44D /* MemberClass.swift in Sources */,
 				BFEDB10A2B12E308007BC44D /* RentClass.swift in Sources */,
 				BFEDB0FF2B12D425007BC44D /* Extensions.swift in Sources */,
@@ -500,6 +665,7 @@
 		};
 		BFEDB0EE2B12C48B007BC44D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587D8FC3BCEDDDD9DD81924B /* Pods-Library booking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,6 +693,7 @@
 		};
 		BFEDB0EF2B12C48B007BC44D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633C853C8EDBD166C6870A60 /* Pods-Library booking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +721,7 @@
 		};
 		BFEDB0F12B12C48B007BC44D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FDAA8C4E873BCD4D6D82F4 /* Pods-Library bookingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -573,6 +741,7 @@
 		};
 		BFEDB0F22B12C48B007BC44D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDBD63ED7ACB3EA620E5D99 /* Pods-Library bookingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +761,7 @@
 		};
 		BFEDB0F42B12C48B007BC44D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89588A5F40A95BCAF8BF0A13 /* Pods-Library booking-Library bookingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -609,6 +779,7 @@
 		};
 		BFEDB0F52B12C48B007BC44D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA2AF0A18740406D1814B8A /* Pods-Library booking-Library bookingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
