@@ -8,7 +8,7 @@
 import Foundation
 
 class MemberClass {
-    var id : Int = 0
+    var id : Int = -1
     var name : String = ""
     var phoneNo : String = ""
     var date : Date = Date()

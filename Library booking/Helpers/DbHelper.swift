@@ -65,7 +65,10 @@ class DbHelper {
     private let RENT_DB_ISRETURNED_NO = 7
     
     
-    
+    init()
+    {
+        createTables()
+    }
     
     private func openBdFromPath( _ dbPath : String)  -> OpaquePointer?
     {
@@ -112,6 +115,7 @@ class DbHelper {
             }
         } else {
             print("\(statmentString) not prepared.")
+            print(String(cString: sqlite3_errmsg(db)))
         }
         if statement != nil
         {
@@ -127,7 +131,7 @@ class DbHelper {
         " (\(BOOK_DB_COLUMN_ID) integer primary key, \(BOOK_DB_COLUMN_NAME) text, \(BOOK_DB_COLUMN_YEAR) integer,\(BOOK_DB_COLUMN_writer) text, \(BOOK_DB_COLUMN_PUBLISHER) text,\(BOOK_DB_COLUMN_COUNT) integer);"
         
         let memberDbString = "create table IF NOT EXISTS " + MEMBERE_DB +
-        " (\(MEMBERE_DB_COLUMN_ID) integer primary key, \(MEMBERE_DB_COLUMN_NAME) text, \(MEMBERE_DB_COLUMN_DATE_INT) integer,\(MEMBERE_DB_COLUMN_PHONE_NO) text);"
+        " (\(MEMBERE_DB_COLUMN_ID) integer primary key, \(MEMBERE_DB_COLUMN_NAME) text, \(MEMBERE_DB_COLUMN_DATE_INT) integer,\(MEMBERE_DB_COLUMN_PHONE_NO) text primary key);"
         
         let rentDbString = "create table IF NOT EXISTS " + RENT_DB +
         " (\(RENT_DB_COLUMN_ID) integer primary key, \(RENT_DB_COLUMN_BOOK_NAME) text, \(RENT_DB_COLUMN_MEMBER_NAME) text,\(RENT_DB_COLUMN_DATE_INT) integer,\(RENT_DB_COLUMN_BOOK_ID) integer , \(RENT_DB_COLUMN_MEMBER_ID) integer,\(RENT_DB_COLUMN_DATE_RETURN_INT) integer, \(RENT_DB_COLUMN_IS_RETURNED) integer DEFAULT 0);"
@@ -169,7 +173,7 @@ class DbHelper {
     }
     func insertRent( _ rent : RentClass , id : Int) -> Bool
     {
-        let value = "'\(rent.book.name)', '\(rent.member.name)',\(rent.rentDate),\(rent.book.id),\(rent.member.id),\(rent.returnDate) ,\(rent.isReturned ? "1" : "0")"
+        let value = "'\(rent.book.name)', '\(rent.member.name)',\(rent.rentDate.getIntTimeStamp()),\(rent.book.id),\(rent.member.id),\(rent.returnDate.getIntTimeStamp()) ,\(rent.isReturned ? "1" : "0")"
         let columns = "\(RENT_DB_COLUMN_BOOK_NAME) ,\(RENT_DB_COLUMN_MEMBER_NAME),\(RENT_DB_COLUMN_DATE_INT) ," +
         "\(RENT_DB_COLUMN_BOOK_ID) , \(RENT_DB_COLUMN_MEMBER_ID) , \(RENT_DB_COLUMN_DATE_RETURN_INT) , \(RENT_DB_COLUMN_IS_RETURNED)"
         
@@ -325,7 +329,7 @@ class DbHelper {
             statementString = "REPLACE INTO \(MEMBERE_DB) (\(MEMBERE_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value);"
         }
         
-        if let db = openBookDatabase()
+        if let db = openMemberDatabase()
         {
             return executeStatmentString(statementString, db: db)
         }
@@ -379,6 +383,7 @@ class DbHelper {
                 
             } else {
                 print("Error executing")
+                String(cString: sqlite3_errmsg(db))
             }
             sqlite3_close(db)
         } else {
@@ -416,11 +421,13 @@ class DbHelper {
             }
             else {
                 print("Error executing")
+                String(cString: sqlite3_errmsg(db))
             }
             sqlite3_close(db)
         }
         else {
             print("\(statmentString) not prepared.")
+            
         }
         return members
     }

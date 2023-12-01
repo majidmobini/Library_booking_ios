@@ -7,7 +7,14 @@
 
 import UIKit
 
-
+extension UIView
+{
+    func roundCorner()
+    {
+        self.layer.cornerRadius = 15
+        self.layer.masksToBounds = true
+    }
+}
 extension UIButton {
     func makeRoundButton()
     {

@@ -12,6 +12,15 @@
 		BF27C1172B1591D9005B7ACB /* AddBookDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */; };
 		BF27C1182B1591D9005B7ACB /* AddBookDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */; };
 		BF5852D42B1413C0008DF60A /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5852D32B1413C0008DF60A /* DbHelper.swift */; };
+		BF6E35A62B16B265002B5380 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E35A52B16B265002B5380 /* Utils.swift */; };
+		BF6E35A92B16B577002B5380 /* AddMemberDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E35A72B16B577002B5380 /* AddMemberDialog.swift */; };
+		BF6E35AA2B16B577002B5380 /* AddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6E35A82B16B577002B5380 /* AddMemberDialog.xib */; };
+		BF6E35AD2B16D05D002B5380 /* AddRentDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E35AB2B16D05D002B5380 /* AddRentDialog.swift */; };
+		BF6E35AE2B16D05D002B5380 /* AddRentDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6E35AC2B16D05D002B5380 /* AddRentDialog.xib */; };
+		BFAEB7602B196F8C00DD0A51 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB75F2B196F8C00DD0A51 /* ListViewController.swift */; };
+		BFAEB7622B197BFC00DD0A51 /* BookListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB7612B197BFC00DD0A51 /* BookListTableCell.swift */; };
+		BFAEB7642B197C2C00DD0A51 /* MemberListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB7632B197C2C00DD0A51 /* MemberListTableCell.swift */; };
+		BFAEB7662B197C7100DD0A51 /* RentBookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB7652B197C7100DD0A51 /* RentBookTableCell.swift */; };
 		BFEDB0C72B12C489007BC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB0C62B12C489007BC44D /* AppDelegate.swift */; };
 		BFEDB0C92B12C489007BC44D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB0C82B12C489007BC44D /* SceneDelegate.swift */; };
 		BFEDB0CB2B12C489007BC44D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB0CA2B12C489007BC44D /* MainViewController.swift */; };
@@ -60,6 +69,15 @@
 		BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookDialog.swift; sourceTree = "<group>"; };
 		BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBookDialog.xib; sourceTree = "<group>"; };
 		BF5852D32B1413C0008DF60A /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
+		BF6E35A52B16B265002B5380 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BF6E35A72B16B577002B5380 /* AddMemberDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberDialog.swift; sourceTree = "<group>"; };
+		BF6E35A82B16B577002B5380 /* AddMemberDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMemberDialog.xib; sourceTree = "<group>"; };
+		BF6E35AB2B16D05D002B5380 /* AddRentDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRentDialog.swift; sourceTree = "<group>"; };
+		BF6E35AC2B16D05D002B5380 /* AddRentDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRentDialog.xib; sourceTree = "<group>"; };
+		BFAEB75F2B196F8C00DD0A51 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BFAEB7612B197BFC00DD0A51 /* BookListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableCell.swift; sourceTree = "<group>"; };
+		BFAEB7632B197C2C00DD0A51 /* MemberListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListTableCell.swift; sourceTree = "<group>"; };
+		BFAEB7652B197C7100DD0A51 /* RentBookTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBookTableCell.swift; sourceTree = "<group>"; };
 		BFEDB0C32B12C489007BC44D /* Library booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDB0C62B12C489007BC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFEDB0C82B12C489007BC44D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,8 +136,21 @@
 			children = (
 				BF27C1152B1591D9005B7ACB /* AddBookDialog.swift */,
 				BF27C1162B1591D9005B7ACB /* AddBookDialog.xib */,
+				BF6E35A72B16B577002B5380 /* AddMemberDialog.swift */,
+				BF6E35A82B16B577002B5380 /* AddMemberDialog.xib */,
+				BF6E35AB2B16D05D002B5380 /* AddRentDialog.swift */,
+				BF6E35AC2B16D05D002B5380 /* AddRentDialog.xib */,
 			);
 			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		BFAEB75E2B19642E00DD0A51 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDB0CA2B12C489007BC44D /* MainViewController.swift */,
+				BFAEB75F2B196F8C00DD0A51 /* ListViewController.swift */,
+			);
+			path = MainControllers;
 			sourceTree = "<group>";
 		};
 		BFEDB0BA2B12C489007BC44D = {
@@ -147,14 +178,14 @@
 		BFEDB0C52B12C489007BC44D /* Library booking */ = {
 			isa = PBXGroup;
 			children = (
+				BFAEB75E2B19642E00DD0A51 /* MainControllers */,
 				BF27C1142B159178005B7ACB /* Dialogs */,
 				BFEDB10B2B12E548007BC44D /* Variables */,
-				BFEDB1042B12E05F007BC44D /* classes */,
+				BFEDB1042B12E05F007BC44D /* Models */,
 				BFEDB0FD2B12D405007BC44D /* Helpers */,
 				BFEDB0F62B12CD59007BC44D /* Views */,
 				BFEDB0C62B12C489007BC44D /* AppDelegate.swift */,
 				BFEDB0C82B12C489007BC44D /* SceneDelegate.swift */,
-				BFEDB0CA2B12C489007BC44D /* MainViewController.swift */,
 				BFEDB0CC2B12C489007BC44D /* Main.storyboard */,
 				BFEDB0CF2B12C48B007BC44D /* Assets.xcassets */,
 				BFEDB0D12B12C48B007BC44D /* LaunchScreen.storyboard */,
@@ -186,6 +217,9 @@
 				BFEDB0F72B12CDAC007BC44D /* HeaderView.swift */,
 				BFEDB0F92B12CDC7007BC44D /* HeaderView.xib */,
 				BFEDB0FB2B12D37C007BC44D /* MainScreenBtnsCell.swift */,
+				BFAEB7612B197BFC00DD0A51 /* BookListTableCell.swift */,
+				BFAEB7632B197C2C00DD0A51 /* MemberListTableCell.swift */,
+				BFAEB7652B197C7100DD0A51 /* RentBookTableCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,20 +227,21 @@
 		BFEDB0FD2B12D405007BC44D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BF6E35A52B16B265002B5380 /* Utils.swift */,
 				BFEDB0FE2B12D425007BC44D /* Extensions.swift */,
 				BF5852D32B1413C0008DF60A /* DbHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		BFEDB1042B12E05F007BC44D /* classes */ = {
+		BFEDB1042B12E05F007BC44D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BFEDB1052B12E099007BC44D /* BookClass.swift */,
 				BFEDB1072B12E2B7007BC44D /* MemberClass.swift */,
 				BFEDB1092B12E308007BC44D /* RentClass.swift */,
 			);
-			path = classes;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BFEDB10B2B12E548007BC44D /* Variables */ = {
@@ -237,7 +272,6 @@
 				E5FDAA8C4E873BCD4D6D82F4 /* Pods-Library bookingTests.debug.xcconfig */,
 				9BDBD63ED7ACB3EA620E5D99 /* Pods-Library bookingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -351,9 +385,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF27C1182B1591D9005B7ACB /* AddBookDialog.xib in Resources */,
+				BF6E35AA2B16B577002B5380 /* AddMemberDialog.xib in Resources */,
 				BFEDB0D32B12C48B007BC44D /* LaunchScreen.storyboard in Resources */,
 				BFEDB0D02B12C48B007BC44D /* Assets.xcassets in Resources */,
 				BFEDB0CE2B12C489007BC44D /* Main.storyboard in Resources */,
+				BF6E35AE2B16D05D002B5380 /* AddRentDialog.xib in Resources */,
 				BFEDB0FA2B12CDC7007BC44D /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,17 +518,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAEB7622B197BFC00DD0A51 /* BookListTableCell.swift in Sources */,
 				BFEDB0CB2B12C489007BC44D /* MainViewController.swift in Sources */,
 				BFEDB1062B12E099007BC44D /* BookClass.swift in Sources */,
 				BF27C1172B1591D9005B7ACB /* AddBookDialog.swift in Sources */,
+				BF6E35A92B16B577002B5380 /* AddMemberDialog.swift in Sources */,
 				BFEDB1082B12E2B7007BC44D /* MemberClass.swift in Sources */,
+				BFAEB7642B197C2C00DD0A51 /* MemberListTableCell.swift in Sources */,
+				BF6E35AD2B16D05D002B5380 /* AddRentDialog.swift in Sources */,
 				BFEDB10A2B12E308007BC44D /* RentClass.swift in Sources */,
+				BF6E35A62B16B265002B5380 /* Utils.swift in Sources */,
 				BFEDB0FF2B12D425007BC44D /* Extensions.swift in Sources */,
 				BFEDB10D2B12E55C007BC44D /* Constants.swift in Sources */,
+				BFAEB7662B197C7100DD0A51 /* RentBookTableCell.swift in Sources */,
 				BFEDB0C72B12C489007BC44D /* AppDelegate.swift in Sources */,
 				BFEDB0C92B12C489007BC44D /* SceneDelegate.swift in Sources */,
 				BFEDB0F82B12CDAC007BC44D /* HeaderView.swift in Sources */,
 				BF5852D42B1413C0008DF60A /* DbHelper.swift in Sources */,
+				BFAEB7602B196F8C00DD0A51 /* ListViewController.swift in Sources */,
 				BFEDB0FC2B12D37C007BC44D /* MainScreenBtnsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

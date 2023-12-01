@@ -7,6 +7,7 @@ target 'Library booking' do
 
   # Pods for Library booking
 	pod 'IQKeyboardManagerSwift'
+pod "SearchTextField"
 
   target 'Library bookingTests' do
     inherit! :search_paths

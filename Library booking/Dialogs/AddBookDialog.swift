@@ -10,6 +10,7 @@ import UIKit
 class AddBookDialog: UIViewController {
     //MARK: properties
     
+    @IBOutlet weak var viAll: UIView!
     @IBOutlet weak var btSave: UIButton!
     @IBOutlet weak var btCancel: UIButton!
     @IBOutlet weak var tfCount: UITextField!
@@ -23,7 +24,7 @@ class AddBookDialog: UIViewController {
     var book : BookClass?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         // Do any additional setup after loading the view.
        
     }
@@ -32,7 +33,7 @@ class AddBookDialog: UIViewController {
     {
         btSave.makeRoundButton()
         btCancel.makeRoundButton()
-        
+        viAll.roundCorner()
         if let book = book
         {
             tfName.text = book.name
@@ -41,6 +42,7 @@ class AddBookDialog: UIViewController {
             tfWriter.text = book.writer
             tfPublisher.text = book.publisher
         }
+        tfName.becomeFirstResponder()
     }
     init()
     {
@@ -61,21 +63,22 @@ class AddBookDialog: UIViewController {
         self.dismiss(animated: true)
     }
     @IBAction func onSave(_ sender: Any) {
-        let book = BookClass()
-        book.name = tfName.text!
-        book.year = Int(tfYear.text!) ?? 0
-        book.writer = tfWriter.text!
-        book.publisher = tfPublisher.text!
-        book.count = Int(tfCount.text!) ?? 1
-        if book.year == 0
+        if book == nil
+        {
+            book = BookClass()
+        }
+        book!.name = tfName.text!
+        book!.year = Int(tfYear.text!) ?? 0
+        book!.writer = tfWriter.text!
+        book!.publisher = tfPublisher.text!
+        book!.count = Int(tfCount.text!) ?? 1
+        if book!.year == 0
         {
             print("Please enter year")
         }
-        if !DbHelper.dbInstance.insertBook(book)
+        if !DbHelper.dbInstance.insertBook(book!,id: book!.id)
         {
-            let alert = UIAlertController(title: "Error".localize(), message: "Cannot add the book".localize(), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Cancel".localize(), style: .cancel))
-            alert.show(self, sender: self)
+            Utils.showMessageDialog(vc: self, title: "Error", text: "Cannot add the book")
         }
         else
         {

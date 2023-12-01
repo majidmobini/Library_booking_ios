@@ -15,14 +15,49 @@ class MainViewController: UIViewController {
         tableBtns.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
-    
-    func addABook()
+    func showViewcontroler( _ vc : UIViewController)
     {
-        let vc = AddBookDialog()
         vc.modalPresentationStyle = .overCurrentContext
         vc.modalTransitionStyle = .coverVertical
         self.present(vc, animated: true)
-        
+    }
+    func addABook()
+    {
+        let vc = AddBookDialog()
+        showViewcontroler(vc)
+    }
+    func addMember()
+    {
+        let vc = AddMemberDialog()
+        showViewcontroler(vc)
+    }
+    func addRent()
+    {
+        let vc = AddRentDialog()
+        showViewcontroler(vc)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ListViewController
+        {
+            if let toGo = sender as? String
+            {
+                switch toGo
+                {
+                case Constants.MainScreenBtnName.memberList.rawValue:
+                    vc.vcTitle = "Members".localize()
+                    print("Goto member list")
+                case Constants.MainScreenBtnName.bookList.rawValue:
+                    vc.vcTitle = "Books".localize()
+                    print("Goto book list")
+                case Constants.MainScreenBtnName.rentedBooksList.rawValue:
+                    vc.vcTitle = "Rente list".localize()
+                    print("Goto rent list")
+                default:
+                    print("No where")
+                }
+            }
+        }
     }
 
 }
@@ -37,16 +72,21 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource , Mai
             addABook()
         case .addMember:
             print("add member")
+            addMember()
         case .bookList:
             print("add list")
+            performSegue(withIdentifier: "goToListSeg", sender: Constants.MainScreenBtnName.bookList.rawValue)
         case .createBackUp:
             print("crea back up")
         case .memberList:
             print("member list")
+            performSegue(withIdentifier: "goToListSeg", sender: Constants.MainScreenBtnName.memberList.rawValue)
         case .rentBook:
+            addRent()
             print("rent")
         case .rentedBooksList:
             print("ren list")
+            performSegue(withIdentifier: "goToListSeg", sender: Constants.MainScreenBtnName.rentedBooksList.rawValue)
         case .restoreBackUp:
             print("restore")
         case .none:
