@@ -18,11 +18,31 @@ class AddRentDialog: UIViewController {
     
     var selectedBook : BookClass?
     var selectedMember : MemberClass?
+    var rent : RentClass?
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         // Do any additional setup after loading the view.
     }
+    
+    init()
+    {
+        super.init(nibName: nil, bundle: .main)
+    }
+    init(rent : RentClass)
+    {
+        self.selectedBook = rent.book
+        self.selectedMember = rent.member
+        self.rent = rent
+        super.init(nibName: nil, bundle: .main)
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     
     func setUpUI()
     {
@@ -68,6 +88,12 @@ class AddRentDialog: UIViewController {
             
         }
         tfBookname.becomeFirstResponder()
+        if let rent = rent
+        {
+            tfBookname.text = rent.book.name
+            tfMemberName.text = rent.member.name
+            tfDate.text = Utils.formatDate(date: rent.rentDate)
+        }
         tfDate.text = Utils.formatDate(date: Date())
     }
     
@@ -96,6 +122,7 @@ class AddRentDialog: UIViewController {
         if DbHelper.dbInstance.insertRent(rent: rent)
         {
             self.dismiss(animated: true)
+            NotificationCenter.default.post(name: Constants.LocalNotifications.tableReload.name(), object: nil, userInfo:nil)
         }
         else
         {

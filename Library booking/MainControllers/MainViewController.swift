@@ -8,7 +8,8 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var tableBtns: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,21 +46,24 @@ class MainViewController: UIViewController {
                 switch toGo
                 {
                 case Constants.MainScreenBtnName.memberList.rawValue:
-                    vc.vcTitle = "Members".localize()
-                    print("Goto member list")
+                    
+                    vc.customInit(vcTitle: "Members".localize(), cellIdentifier: Constants.ListTableCellName.memberListCell, rowHeight: 80)
                 case Constants.MainScreenBtnName.bookList.rawValue:
-                    vc.vcTitle = "Books".localize()
+                    
+                    vc.customInit(vcTitle: "Books".localize(), cellIdentifier: Constants.ListTableCellName.bookListCell, rowHeight: 120)
                     print("Goto book list")
                 case Constants.MainScreenBtnName.rentedBooksList.rawValue:
-                    vc.vcTitle = "Rente list".localize()
+                    
+                    vc.customInit(vcTitle: "Rent list".localize(), cellIdentifier: Constants.ListTableCellName.renListCell, rowHeight: 120)
                     print("Goto rent list")
                 default:
                     print("No where")
                 }
             }
         }
+        
     }
-
+    
 }
 //MARK: table delegates
 extension MainViewController : UITableViewDelegate , UITableViewDataSource , MainScreenBtnsCellDelegate

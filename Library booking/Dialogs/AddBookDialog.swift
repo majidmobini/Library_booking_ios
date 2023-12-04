@@ -83,6 +83,8 @@ class AddBookDialog: UIViewController {
         else
         {
             self.dismiss(animated: true)
+            NotificationCenter.default.post(name: Constants.LocalNotifications.tableReload.name(), object: nil, userInfo:nil)
+            
         }
     }
     

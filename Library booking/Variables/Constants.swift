@@ -23,4 +23,19 @@ class Constants {
             return self.rawValue.localize()
         }
     }
+    
+    enum ListTableCellName : String {
+        case memberListCell = "memberListCellId"
+        case bookListCell = "bookListCellId"
+        case renListCell = "RentListCellId"
+    }
+    
+    enum LocalNotifications : String {
+        case tableReload = "reloadData"
+        
+        func name() -> Notification.Name
+        {
+            return Notification.Name(self.rawValue)
+        }
+    }
 }

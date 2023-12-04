@@ -74,6 +74,7 @@ class AddMemberDialog: UIViewController {
         if DbHelper.dbInstance.insertMember(member!, id: member!.id)
         {
             self.dismiss(animated: true)
+            NotificationCenter.default.post(name: Constants.LocalNotifications.tableReload.name(), object: nil, userInfo:nil)
         }
         else
         {

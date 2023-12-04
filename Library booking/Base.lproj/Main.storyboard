@@ -152,15 +152,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B43-11-MVT">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-Mt-dFR">
-                                        <rect key="frame" x="0.0" y="86" width="393" height="673"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-Mt-dFR">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-BT-Mjv">
-                                        <rect key="frame" x="0.0" y="130" width="393" height="629"/>
+                                        <rect key="frame" x="0.0" y="140" width="393" height="619"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.8004554385" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="hRT-JG-hod" customClass="BookListTableCell" customModule="Library_booking" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookListCellId" rowHeight="120" id="hRT-JG-hod" customClass="BookListTableCell" customModule="Library_booking" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="393" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRT-JG-hod" id="KTc-tN-m3T">
@@ -300,7 +300,7 @@
                                                     <outlet property="viRow" destination="zqQ-0h-o94" id="FN2-tg-1at"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="G6A-8f-DAi" customClass="MemberListTableCell" customModule="Library_booking" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberListCellId" rowHeight="80" id="G6A-8f-DAi" customClass="MemberListTableCell" customModule="Library_booking" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="170" width="393" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G6A-8f-DAi" id="Nlx-KW-WHE">
@@ -389,7 +389,7 @@
                                                     <outlet property="viRow" destination="0l8-uU-Pxx" id="uDI-jC-ifF"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="k1h-ET-pXk" customClass="RentBookTableCell" customModule="Library_booking" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RentListCellId" rowHeight="120" id="k1h-ET-pXk" customClass="RentBookTableCell" customModule="Library_booking" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="250" width="393" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k1h-ET-pXk" id="Mja-0d-hdX">
@@ -489,6 +489,8 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
+                                                    <outlet property="btnMore" destination="cgX-mg-OQf" id="Tsn-yB-yGD"/>
+                                                    <outlet property="imMore" destination="FVz-ru-GwN" id="Jim-Xb-LAn"/>
                                                     <outlet property="lbBookName" destination="zaA-cu-7dA" id="69f-Bn-ZvG"/>
                                                     <outlet property="lbDate" destination="ySP-a1-qAg" id="bRz-qL-s1w"/>
                                                     <outlet property="lbMember" destination="1Lh-Vw-YwT" id="OGE-dZ-bbS"/>
@@ -496,9 +498,13 @@
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="7e7-dC-oRc" id="YTm-bP-630"/>
+                                            <outlet property="delegate" destination="7e7-dC-oRc" id="Ior-X1-3FT"/>
+                                        </connections>
                                     </tableView>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41v-iA-cFf">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                         <color key="barTintColor" name="PrimaryColor"/>
                                         <textAttributes key="titleTextAttributes">
                                             <color key="textColor" name="TextColor"/>
@@ -517,32 +523,47 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <searchBar contentMode="redraw" id="gnT-Cx-wjf">
-                                        <rect key="frame" x="0.0" y="86" width="393" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uQI-9w-ybR">
+                                        <rect key="frame" x="0.0" y="44" width="393" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="7e7-dC-oRc" id="aor-wn-Rfo"/>
+                                            <outlet property="delegate" destination="7e7-dC-oRc" id="H4V-6s-Y5Y"/>
                                         </connections>
                                     </searchBar>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-O7-xMb">
+                                        <rect key="frame" x="0.0" y="100" width="393" height="41"/>
+                                        <segments>
+                                            <segment title="Rented"/>
+                                            <segment title="Returned"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onSegmentChanged:" destination="7e7-dC-oRc" eventType="valueChanged" id="KCr-jE-vl9"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Vx3-Mt-dFR" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="1FN-1K-WeQ"/>
                                     <constraint firstItem="R6n-BT-Mjv" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="2PO-VM-ELz"/>
                                     <constraint firstAttribute="trailing" secondItem="41v-iA-cFf" secondAttribute="trailing" id="6cw-TO-tpv"/>
                                     <constraint firstItem="41v-iA-cFf" firstAttribute="top" secondItem="B43-11-MVT" secondAttribute="top" id="7wH-y9-Db6"/>
+                                    <constraint firstItem="uQI-9w-ybR" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="CXu-VL-W8q"/>
                                     <constraint firstAttribute="trailing" secondItem="R6n-BT-Mjv" secondAttribute="trailing" id="Ckz-Oe-NOT"/>
-                                    <constraint firstItem="R6n-BT-Mjv" firstAttribute="top" secondItem="gnT-Cx-wjf" secondAttribute="bottom" id="Hdk-mb-vEF"/>
+                                    <constraint firstItem="R6n-BT-Mjv" firstAttribute="top" secondItem="uQI-9w-ybR" secondAttribute="bottom" constant="40" id="GYr-GA-DWJ"/>
+                                    <constraint firstItem="R6n-BT-Mjv" firstAttribute="top" secondItem="gcA-O7-xMb" secondAttribute="bottom" id="NEx-bx-BGe"/>
+                                    <constraint firstItem="uQI-9w-ybR" firstAttribute="top" secondItem="41v-iA-cFf" secondAttribute="bottom" id="P1q-9S-Juq"/>
                                     <constraint firstAttribute="trailing" secondItem="R6n-BT-Mjv" secondAttribute="trailing" id="QZd-CA-ORa"/>
                                     <constraint firstAttribute="bottom" secondItem="R6n-BT-Mjv" secondAttribute="bottom" id="WYP-Kb-t5H"/>
                                     <constraint firstItem="41v-iA-cFf" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="XlI-bH-7A1"/>
-                                    <constraint firstItem="Vx3-Mt-dFR" firstAttribute="top" secondItem="41v-iA-cFf" secondAttribute="bottom" id="a0Y-1d-och"/>
                                     <constraint firstAttribute="trailing" secondItem="Vx3-Mt-dFR" secondAttribute="trailing" id="ai8-8K-N9n"/>
                                     <constraint firstAttribute="bottom" secondItem="Vx3-Mt-dFR" secondAttribute="bottom" id="blw-bm-NF6"/>
-                                    <constraint firstItem="gnT-Cx-wjf" firstAttribute="top" secondItem="41v-iA-cFf" secondAttribute="bottom" id="dkW-eE-WgX"/>
+                                    <constraint firstItem="Vx3-Mt-dFR" firstAttribute="top" secondItem="B43-11-MVT" secondAttribute="top" id="cUX-jn-899"/>
+                                    <constraint firstAttribute="trailing" secondItem="uQI-9w-ybR" secondAttribute="trailing" id="d3j-1a-0Dt"/>
                                     <constraint firstItem="R6n-BT-Mjv" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="ftd-i6-PgM"/>
+                                    <constraint firstAttribute="trailing" secondItem="gcA-O7-xMb" secondAttribute="trailing" id="hcN-Ra-IzO"/>
+                                    <constraint firstItem="gcA-O7-xMb" firstAttribute="top" secondItem="uQI-9w-ybR" secondAttribute="bottom" id="lEE-9Q-m4Q"/>
                                     <constraint firstAttribute="bottom" secondItem="R6n-BT-Mjv" secondAttribute="bottom" id="ocx-Ub-JPA"/>
+                                    <constraint firstItem="gcA-O7-xMb" firstAttribute="leading" secondItem="B43-11-MVT" secondAttribute="leading" id="z2n-b1-XYy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04h-ek-34e">
@@ -555,7 +576,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b9m-u5-6Dn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ZSM-RS-EvC" secondAttribute="trailing" id="1D6-Hi-vMd"/>
                             <constraint firstAttribute="trailing" secondItem="04h-ek-34e" secondAttribute="trailing" id="54S-bR-yUn"/>
@@ -573,19 +594,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="zdt-CB-O2e"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="aBw-YO-5Tm" id="1aY-3f-CmJ"/>
+                        <outlet property="nsTableViewDistancsFromTop" destination="GYr-GA-DWJ" id="HbA-kj-pPH"/>
+                        <outlet property="tableView" destination="R6n-BT-Mjv" id="pwy-2g-Xrv"/>
+                        <outlet property="uiSearchBar" destination="uQI-9w-ybR" id="ZOk-dN-r2c"/>
+                        <outlet property="uiSegmentSelctor" destination="gcA-O7-xMb" id="Sxm-oZ-bIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSJ-F5-zo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="aBw-YO-5Tm">
-                    <connections>
-                        <outlet property="delegate" destination="7e7-dC-oRc" id="lI7-Jf-7LK"/>
-                        <outlet property="searchBar" destination="gnT-Cx-wjf" id="HbS-os-oHc"/>
-                        <outlet property="searchContentsController" destination="7e7-dC-oRc" id="4W4-QB-NwK"/>
-                        <outlet property="searchResultsDataSource" destination="7e7-dC-oRc" id="Lvf-j2-wfA"/>
-                        <outlet property="searchResultsDelegate" destination="7e7-dC-oRc" id="rc5-fH-fjh"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="967.17557251908397" y="-33.098591549295776"/>
         </scene>

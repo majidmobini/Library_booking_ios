@@ -77,3 +77,21 @@ extension UIViewController {
     
 }
 
+extension UIAlertController {
+    func fixIpad(view : UIView)
+    {
+        if UIDevice.current.userInterfaceIdiom == .pad
+        {
+               // Set up the popover presentation controller for iPad
+               if let popoverController = self.popoverPresentationController {
+                   // Configure the popover controller here, like setting the sourceView
+                   // This should typically be a UIBarButtonItem or a UIView instance that you want the popover to point to
+                   popoverController.sourceView = view
+                   // You can adjust this rect to move the popover's arrow to the appropriate location
+                   popoverController.sourceRect = CGRect(x: view.bounds.midX, y: view.bounds.midY, width: 0, height: 0)
+                   popoverController.permittedArrowDirections = [] // Adjust if you want an arrow pointing to the sourceRect
+               }
+        }
+    }
+}
+

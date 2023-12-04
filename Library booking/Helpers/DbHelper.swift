@@ -180,7 +180,7 @@ class DbHelper {
         var statementString = "INSERT INTO \(RENT_DB) (\(columns)) VALUES (\(value));"
         if id > -1
         {
-            statementString = "REPLACE INTO \(RENT_DB) (\(RENT_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value);"
+            statementString = "REPLACE INTO \(RENT_DB) (\(RENT_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value));"
         }
         
         if let db = openRentDatabase()
@@ -228,7 +228,7 @@ class DbHelper {
         var statementString = "INSERT INTO \(BOOK_DB) (\(columns)) VALUES (\(value));"
         if id > -1
         {
-            statementString = "REPLACE INTO \(BOOK_DB) (\(BOOK_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value);"
+            statementString = "REPLACE INTO \(BOOK_DB) (\(BOOK_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value));"
         }
         
         if let db = openBookDatabase()
@@ -326,7 +326,7 @@ class DbHelper {
         var statementString = "INSERT INTO \(MEMBERE_DB) (\(columns)) VALUES (\(value));"
         if id > -1
         {
-            statementString = "REPLACE INTO \(MEMBERE_DB) (\(MEMBERE_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value);"
+            statementString = "REPLACE INTO \(MEMBERE_DB) (\(MEMBERE_DB_COLUMN_ID),\(columns)) VALUES (\(id),\(value));"
         }
         
         if let db = openMemberDatabase()
